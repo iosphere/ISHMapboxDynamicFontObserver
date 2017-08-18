@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC4BB2201F46CCBC00363AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BB21F1F46CCBC00363AF9 /* AppDelegate.swift */; };
+		DC4BB2221F46CCBC00363AF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4BB2211F46CCBC00363AF9 /* ViewController.swift */; };
+		DC4BB2251F46CCBC00363AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4BB2231F46CCBC00363AF9 /* Main.storyboard */; };
+		DC4BB2271F46CCBC00363AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4BB2261F46CCBC00363AF9 /* Assets.xcassets */; };
+		DC4BB22A1F46CCBC00363AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4BB2281F46CCBC00363AF9 /* LaunchScreen.storyboard */; };
+		DC6EDE291F46E2300061E4B4 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6EDE281F46E2300061E4B4 /* Mapbox.framework */; };
+		DC6EDE2A1F46E2300061E4B4 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC6EDE281F46E2300061E4B4 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC6EDE2D1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6EDE2B1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC4BB2421F46CCE000363AF9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC6EDE2A1F46E2300061E4B4 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC4BB21C1F46CCBC00363AF9 /* MapboxDynamicFontStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxDynamicFontStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4BB21F1F46CCBC00363AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC4BB2211F46CCBC00363AF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC4BB2241F46CCBC00363AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC4BB2261F46CCBC00363AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC4BB2291F46CCBC00363AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC4BB22B1F46CCBC00363AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4BB2441F46CF1500363AF9 /* MapboxDynamicFontStyle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapboxDynamicFontStyle-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC6EDE281F46E2300061E4B4 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "mapbox-ios-sdk/dynamic/Mapbox.framework"; sourceTree = "<group>"; };
+		DC6EDE2B1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ISHMapboxDynamicFontObserver.m; path = ../../ISHMapboxDynamicFontObserver.m; sourceTree = "<group>"; };
+		DC6EDE2C1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ISHMapboxDynamicFontObserver.h; path = ../../ISHMapboxDynamicFontObserver.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC4BB2191F46CCBC00363AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6EDE291F46E2300061E4B4 /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC4BB2131F46CCBC00363AF9 = {
+			isa = PBXGroup;
+			children = (
+				DC6EDE281F46E2300061E4B4 /* Mapbox.framework */,
+				DC4BB21E1F46CCBC00363AF9 /* MapboxDynamicFontStyle */,
+				DC4BB21D1F46CCBC00363AF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC4BB21D1F46CCBC00363AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4BB21C1F46CCBC00363AF9 /* MapboxDynamicFontStyle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC4BB21E1F46CCBC00363AF9 /* MapboxDynamicFontStyle */ = {
+			isa = PBXGroup;
+			children = (
+				DC6EDE2C1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.h */,
+				DC6EDE2B1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.m */,
+				DC4BB21F1F46CCBC00363AF9 /* AppDelegate.swift */,
+				DC4BB2211F46CCBC00363AF9 /* ViewController.swift */,
+				DC4BB2231F46CCBC00363AF9 /* Main.storyboard */,
+				DC4BB2261F46CCBC00363AF9 /* Assets.xcassets */,
+				DC4BB2281F46CCBC00363AF9 /* LaunchScreen.storyboard */,
+				DC4BB22B1F46CCBC00363AF9 /* Info.plist */,
+				DC4BB2441F46CF1500363AF9 /* MapboxDynamicFontStyle-Bridging-Header.h */,
+			);
+			path = MapboxDynamicFontStyle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC4BB21B1F46CCBC00363AF9 /* MapboxDynamicFontStyle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4BB2391F46CCBC00363AF9 /* Build configuration list for PBXNativeTarget "MapboxDynamicFontStyle" */;
+			buildPhases = (
+				DC4BB2181F46CCBC00363AF9 /* Sources */,
+				DC4BB2191F46CCBC00363AF9 /* Frameworks */,
+				DC4BB21A1F46CCBC00363AF9 /* Resources */,
+				DC4BB2421F46CCE000363AF9 /* Embed Frameworks */,
+				DC4BB2431F46CD0700363AF9 /* Strip mapbox */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapboxDynamicFontStyle;
+			productName = MapboxDynamicFontStyle;
+			productReference = DC4BB21C1F46CCBC00363AF9 /* MapboxDynamicFontStyle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC4BB2141F46CCBC00363AF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "iosphere GmbH";
+				TargetAttributes = {
+					DC4BB21B1F46CCBC00363AF9 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = DC4BB2171F46CCBC00363AF9 /* Build configuration list for PBXProject "MapboxDynamicFontStyle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC4BB2131F46CCBC00363AF9;
+			productRefGroup = DC4BB21D1F46CCBC00363AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4BB21B1F46CCBC00363AF9 /* MapboxDynamicFontStyle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC4BB21A1F46CCBC00363AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4BB22A1F46CCBC00363AF9 /* LaunchScreen.storyboard in Resources */,
+				DC4BB2271F46CCBC00363AF9 /* Assets.xcassets in Resources */,
+				DC4BB2251F46CCBC00363AF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC4BB2431F46CD0700363AF9 /* Strip mapbox */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip mapbox";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC4BB2181F46CCBC00363AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4BB2221F46CCBC00363AF9 /* ViewController.swift in Sources */,
+				DC4BB2201F46CCBC00363AF9 /* AppDelegate.swift in Sources */,
+				DC6EDE2D1F46E27F0061E4B4 /* ISHMapboxDynamicFontObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC4BB2231F46CCBC00363AF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4BB2241F46CCBC00363AF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC4BB2281F46CCBC00363AF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4BB2291F46CCBC00363AF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC4BB2371F46CCBC00363AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC4BB2381F46CCBC00363AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC4BB23A1F46CCBC00363AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 49EXXCJRVY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mapbox-ios-sdk-3.6.1-dynamic/dynamic",
+					"$(PROJECT_DIR)/mapbox-ios-sdk/dynamic",
+				);
+				INFOPLIST_FILE = MapboxDynamicFontStyle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.iosphere.com.sumup.MapboxDynamicFontStyle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MapboxDynamicFontStyle/MapboxDynamicFontStyle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC4BB23B1F46CCBC00363AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 49EXXCJRVY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mapbox-ios-sdk-3.6.1-dynamic/dynamic",
+					"$(PROJECT_DIR)/mapbox-ios-sdk/dynamic",
+				);
+				INFOPLIST_FILE = MapboxDynamicFontStyle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.iosphere.com.sumup.MapboxDynamicFontStyle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MapboxDynamicFontStyle/MapboxDynamicFontStyle-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC4BB2171F46CCBC00363AF9 /* Build configuration list for PBXProject "MapboxDynamicFontStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4BB2371F46CCBC00363AF9 /* Debug */,
+				DC4BB2381F46CCBC00363AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4BB2391F46CCBC00363AF9 /* Build configuration list for PBXNativeTarget "MapboxDynamicFontStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4BB23A1F46CCBC00363AF9 /* Debug */,
+				DC4BB23B1F46CCBC00363AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC4BB2141F46CCBC00363AF9 /* Project object */;
+}
