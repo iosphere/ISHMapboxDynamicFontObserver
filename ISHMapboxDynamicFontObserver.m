@@ -32,6 +32,8 @@
 }
 
 - (instancetype)initWithStyle:(MGLStyle *)style {
+    NSParameterAssert(style);
+
     self = [self init];
     self.style = style;
     return self;
@@ -42,6 +44,7 @@
 
     if (!style) {
         self.baseTextSizeValues = nil;
+        self.baseIconSizeValues = nil;
         return;
     }
 
@@ -90,15 +93,15 @@
 
     for (NSString *identifier in self.baseTextSizeValues) {
         MGLStyleLayer *layer = [self.style layerWithIdentifier:identifier];
-        MGLStyleValue *value = [self.baseTextSizeValues objectForKey:identifier];
 
         if (![layer isKindOfClass:[MGLSymbolStyleLayer class]]) {
             continue;
         }
 
         MGLSymbolStyleLayer *symbolLayer = (MGLSymbolStyleLayer *)layer;
-        MGLStyleValue *updatedValue = [ISHMapboxDynamicFontObserver styleValue:value multipliedByScale:scale];
-        symbolLayer.textFontSize = updatedValue;
+
+        MGLStyleValue *textValue = [self.baseTextSizeValues objectForKey:identifier];
+        symbolLayer.textFontSize = [ISHMapboxDynamicFontObserver styleValue:textValue multipliedByScale:scale];
 
         if (!symbolLayer.iconImageName) {
             continue;
@@ -134,13 +137,13 @@
 + (MGLStyleValue *)styleCameraValue:(MGLCameraStyleFunction *)cameraValue multipliedByScale:(CGFloat)scale {
     __block NSMutableDictionary<id, MGLStyleValue *> *newStops = [NSMutableDictionary dictionaryWithCapacity:cameraValue.stops.count];
 
-    [cameraValue.stops enumerateKeysAndObjectsUsingBlock:^(id key, MGLStyleValue *value, BOOL * stop) {
-        newStops[key] = [self styleValue:cameraValue.stops[key] multipliedByScale:scale];
+    [cameraValue.stops enumerateKeysAndObjectsUsingBlock:^(id key, MGLStyleValue *value, BOOL *stop) {
+        newStops[key] = [self styleValue:value multipliedByScale:scale];
     }];
 
     MGLCameraStyleFunction *newValue = (MGLCameraStyleFunction *)[MGLStyleValue valueWithInterpolationMode:cameraValue.interpolationMode
                                                                                                cameraStops:newStops
-                                                                                                options:nil];
+                                                                                                   options:cameraValue.options];
     newValue.interpolationBase = cameraValue.interpolationBase;
     return newValue ? : cameraValue;
 }

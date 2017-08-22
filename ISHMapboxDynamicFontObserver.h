@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  `ISHMapboxDynamicFontObserver` applies the user's preferred content size setting to a Mapbox style.
  *
  *  The provided style is assumed to be designed for the content category UIContentSizeCategoryLarge.
- *  All symbol layer's text sizes are then scaled according to the user's preferred content size setting.
+ *  All symbol layers' text sizes are then scaled according to the user's preferred content size setting.
  *  For layers that contain a text size attribute and an icon image, the icon image is also scaled accordingly.
  *
  *  The observer listens to changes in the user's preferred content size setting and automatically applies the setting
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface ISHMapboxDynamicFontObserver : NSObject
 - (instancetype)initWithStyle:(MGLStyle *)style;
-@property (nonatomic) MGLStyle *style;
+@property (nonatomic, nullable) MGLStyle *style;
 @end
 
 NS_ASSUME_NONNULL_END
