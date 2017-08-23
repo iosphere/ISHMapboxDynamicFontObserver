@@ -143,7 +143,7 @@
 
     MGLCameraStyleFunction *newValue = (MGLCameraStyleFunction *)[MGLStyleValue valueWithInterpolationMode:cameraValue.interpolationMode
                                                                                                cameraStops:newStops
-                                                                                                   options:cameraValue.options];
+                                                                                                   options:nil];
     newValue.interpolationBase = cameraValue.interpolationBase;
     return newValue ? : cameraValue;
 }
