@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
  *      - MGLCameraStyleFunction
  *      - MGLConstantStyleValue
  *
+ *  @note When scaling, style values will be copied/re-created internally. For values of type MGLCameraStyleFunction,
+ *  options are currently not copied and thus will be ignored.
+ *
  */
 @interface ISHMapboxDynamicFontObserver : NSObject
 - (instancetype)initWithStyle:(MGLStyle *)style;

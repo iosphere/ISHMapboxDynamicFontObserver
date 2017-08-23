@@ -36,6 +36,7 @@
 
     self = [self init];
     self.style = style;
+
     return self;
 }
 
@@ -141,10 +142,11 @@
         newStops[key] = [self styleValue:value multipliedByScale:scale];
     }];
 
-    MGLCameraStyleFunction *newValue = (MGLCameraStyleFunction *)[MGLStyleValue valueWithInterpolationMode:cameraValue.interpolationMode
-                                                                                               cameraStops:newStops
-                                                                                                   options:nil];
+    MGLCameraStyleFunction *newValue = [MGLCameraStyleFunction valueWithInterpolationMode:cameraValue.interpolationMode
+                                                                              cameraStops:newStops
+                                                                                  options:nil];
     newValue.interpolationBase = cameraValue.interpolationBase;
+
     return newValue ? : cameraValue;
 }
 
