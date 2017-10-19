@@ -156,7 +156,6 @@
 
     dispatch_once(&onceToken, ^{
         scales = @{
-                   UIContentSizeCategoryUnspecified: @1,
                    UIContentSizeCategoryExtraSmall: @0.7,
                    UIContentSizeCategorySmall: @0.8,
                    UIContentSizeCategoryMedium: @0.9,
@@ -169,6 +168,12 @@
                    UIContentSizeCategoryAccessibilityExtraExtraLarge: @2.5,
                    UIContentSizeCategoryAccessibilityExtraExtraExtraLarge: @3,
                    };
+
+        if (@available(iOS 10.0, *)) {
+            NSMutableDictionary<UIContentSizeCategory, NSNumber *> *mutableScales = [scales mutableCopy];
+            [mutableScales setObject:@1 forKey:UIContentSizeCategoryUnspecified];
+            scales = [mutableScales copy];
+        }
     });
     NSNumber *scale = scales[category];
 
